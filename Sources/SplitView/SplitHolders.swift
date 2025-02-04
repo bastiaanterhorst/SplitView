@@ -83,7 +83,7 @@ public class FractionHolder: ObservableObject {
 ///
 /// Use the static `usingUserDefaults` method to save state automatically in `UserDefaults.standard`.
 public class SideHolder: ObservableObject {
-    @Published private var value: SplitSide? {
+    @Published public var value: SplitSide? {
         didSet {
             setter?(value)
         }
